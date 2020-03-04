@@ -1,11 +1,18 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: cursive;
+  font-family: 'Merriweather', serif;
 }
 
 h1 {
   margin-top: 0;
+  font-family: 'Sacramento', cursive;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 div {
@@ -19,19 +26,9 @@ div {
 }
 
 .middle-container {
-  background-color:  red;
-  width: 200px;
-  height: 200px;
-  border: solid 20px;
-  margin-left: 260px;
 }
 
 .bottom-container {
-  background-color: blue;
-  width: 200px;
-  height: 200px;
-  border: solid 10px;
-  margin-left: 500px;
 }
 
 .fullstack {
