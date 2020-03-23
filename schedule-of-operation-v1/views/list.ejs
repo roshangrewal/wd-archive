@@ -5,6 +5,12 @@
     <title>Schedule of Operation</title>
   </head>
   <body>
-    <h1>Today is <%= theDay %>!</h1>
+
+    <% if(theDay === 'Saturday' || theDay === 'Sunday'){ %>
+      <h1 style="color: green"><%= theDay %> Operations</h1>
+    <% } else { %>
+      <h1 style="color: purple"><%= theDay %> Operations</h1>
+    <% } %>
+
   </body>
 </html>
