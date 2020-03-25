@@ -3,10 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Schedule of Operation</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
-    <h1><%= theDay %></h1>
+    <div class="box" id="heading">
+      <h1><%= theDay %></h1>
+    </div>
+
+    <div class="box">
+      <% for(var i=0; i<newListItems.length; i++){ %>
+        <div class="item">
+          <input type="checkbox">
+          <p> <%= newListItems[i] %> </p>
+        </div>
+      <% } %>
+
+      <form class="item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="Operation" autocomplete="off">
+        <button type="submit" name="button">+</button>
+      </form>
+    </div>
+
+
 
     <!-- <% if(theDay === 'Saturday' || theDay === 'Sunday'){ %>
       <h1 style="color: green"><%= theDay %> Operations</h1>
