@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const date = require(__dirname + '/date.js');
 
 const app = express();
 
-var items = ["Start Scheduling"];
-var workItems = [];
+const items = ["Start Scheduling"];
+const workItems = [];
 
 app.set('view engine', 'ejs');
 
@@ -13,20 +14,13 @@ app.use(express.static('public'));
 
 app.get('/', function(req, res) {
 
-  var today = new Date();
-  var options = {
-    weekday: "long",
-    day: "numeric",
-    month: "long"
-  };
-
-  var day = today.toLocaleDateString("en-US", options);
+  const day = date.getDate();
   res.render('list', { operTitle: day, newListItems: items });
 
 });
 
 app.post('/', function(req, res){
-  var item = req.body.newItem;
+  const item = req.body.newItem;
   // console.log(item);
   if(req.body.list === 'Work'){
     workItems.push(item);
@@ -43,7 +37,7 @@ app.get('/work', function(req, res){
 });
 
 app.post('/work', function(req, res){
-  var item = req.body.newItem;
+  const item = req.body.newItem;
   workItems.push(item);
   res.redirect('/work');
 });
