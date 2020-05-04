@@ -1,0 +1,42 @@
+<%- include('partials/header'); -%>
+
+
+<% posts.forEach(function(post){ %>
+
+<td align="right" valign="top" class="title"><span class="rank">1</span></td>
+<td valign="top" class="votelinks">
+    <center><a id="up_23022864" onclick="return vote(event, this, &quot;up&quot;)"
+            href="vote?id=23022864&amp;how=up&amp;auth=f0becc2d30016ab5bd40ddb706b807cc36047acc&amp;goto=news">
+            <div class="votearrow" title="upvote"></div>
+        </a></center>
+</td>
+
+<td class="title">
+    <a href=<%= post.url %> class="storylink"><%= post.title %></a>
+
+    <span class="sitebit comhead">
+        (<a href="from?site=arxiv.org"><span class="sitestr">arxiv.org</span></a>)</span>
+</td>
+
+</tr>
+
+<tr>
+    <td colspan="2"></td>
+    <td class="subtext">
+        <span class="score" id="score_23022864">40 points</span> by <a href="user?id=godelmachine"
+            class="hnuser">godelmachine</a> <span class="age"><a href="item?id=23022864">50 minutes
+                ago</a></span> <span id="unv_23022864"></span> | <a
+            href="hide?id=23022864&amp;auth=f0becc2d30016ab5bd40ddb706b807cc36047acc&amp;goto=news"
+            onclick="return hidestory(event, this, 23022864)">hide</a> | <a href="item?id=23022864">4&nbsp;comments</a>
+    </td>
+</tr>
+<tr class="spacer" style="height:5px"></tr>
+
+<tr class="morespace" style="height:10px"></tr>
+
+
+
+<% }) %>
+
+
+<%- include('partials/footer'); -%>
