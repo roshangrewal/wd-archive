@@ -25,7 +25,6 @@ const postSchema = {
   title: String,
   content: String
 };
-
 const Post = mongoose.model('Post', postSchema);
 
 
