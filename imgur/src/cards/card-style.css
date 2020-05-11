@@ -1,0 +1,71 @@
+body {
+  background: radial-gradient(#868383, #141616, #494545);
+  color: #e0e0e0;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.comment-wrap {
+  flex: 33.333%;
+  max-width: 33.333%;
+  text-align: center;
+  padding: 0px;
+  border: none;
+  background: none;
+  color: #868383;
+  font-size: 0.8rem;
+}
+
+button.change:hover {
+  cursor: pointer;
+  color: #F89900;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 1.253) !important;
+}
+
+.card-body {
+  padding: 0.5rem 0 !important;
+  background-color: #474a51;
+}
+
+p.card-text {
+  font-size: 0.9rem;
+  padding: 0.2rem 0rem;
+  margin-bottom: 0;
+  color: aliceblue;
+}
+
+.custom-container {
+  padding-top: 2rem;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.8);
+}
