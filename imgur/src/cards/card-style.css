@@ -3,6 +3,17 @@ body {
   color: #e0e0e0;
 }
 
+.col-25 {
+  flex: 33.333%;
+  max-width: 33.333%;
+  padding: 0 15px;
+}
+
+.heading {
+  text-emphasis: none;
+  text-align: center;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -moz-box;
@@ -10,6 +21,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.flex-vcenter {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .comment-wrap {
@@ -51,6 +70,7 @@ p.card-text {
   padding: 0.2rem 0rem;
   margin-bottom: 0;
   color: aliceblue;
+  /* text-align: left; */
 }
 
 .custom-container {

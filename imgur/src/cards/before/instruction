@@ -1,0 +1,4 @@
+instead of using bootstrap row and column
+<div className="container custom-container">
+<div className="flex-container flex-vcenter">
+class="col-25"

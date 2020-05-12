@@ -22,8 +22,11 @@ const Card = (props) => {
         <img src={props.imgsrc} alt="img-1" className="card-img-top" />
       </div>
       <div className="card-body">
-        <p className="card-text ">{props.title}</p>
-
+        {/* <h5 className="card-title">{props.title}</h5> */}
+        <p className="card-text ">Lorum Ipsum Lorum Ipsum</p>
+        {/* <a href="#" className="btn btn-outline-success"> */}
+        {/* Click Here
+        </a> */}
         <div class="comment-main flex-container text-secondary">
           <button className="comment-wrap" onClick={increaseLike}>
             Like {count}
