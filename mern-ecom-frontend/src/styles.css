@@ -8,6 +8,46 @@
     border-radius: 0px;
 }
 
+/* cart badge */
+
+.cart-badge,
+.cart-badge:hover {
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 12px;
+    font-style: italic;
+    background: #000;
+}
+/**
+ * single product page - product name
+ */
+
+.name {
+    background: indigo;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* black shade form 10-1 */
+.black-10 {
+    background: #f2f2f2;
+}
+.black-9 {
+    background: #e6e6e6;
+}
+.black-8 {
+    background: #d9d9d9;
+}
+.black-7 {
+    background: #cccccc;
+}
+.black-6 {
+    background: #bfbfbf;
+}
+.black-5 {
+    background: #b3b3b3;
+}
+
 /**
  * product image on card
  */
@@ -31,8 +71,8 @@
  */
 
 .jumbotron {
-    width: 10wh;
-    height: 10vh;
+    width: 30wh;
+    height: 30vh;
     color: #fff;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;

@@ -8,8 +8,10 @@ import Dashboard from "./user/UserDashboard";
 import AdminRoute from "./auth/AdminRoute";
 import AdminDashboard from "./user/AdminDashboard";
 import AddCategory from "./admin/AddCategory";
-import AddProduct from './admin/AddProduct';
-import Shop from './core/Shop';
+import AddProduct from "./admin/AddProduct";
+import Shop from "./core/Shop";
+import Product from "./core/Product";
+import Cart from "./core/Cart";
 
 const Routes = () => {
     return (
@@ -39,6 +41,8 @@ const Routes = () => {
                     exact
                     component={AddProduct}
                 />
+                <Route path="/product/:productId" exact component={Product} />
+                <Route path="/cart" exact component={Cart} />
             </Switch>
         </BrowserRouter>
     );
