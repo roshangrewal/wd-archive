@@ -1,1 +1,2 @@
-![Architecture](https://github.com/roshangrewal/wd-archive/tree/master/pern-todo/architecture.png "System Architecture")
+![Architecture](https://github.com/roshangrewal/wd-archive/blob/master/pern-todo/architecture.png "System Architecture")
+
